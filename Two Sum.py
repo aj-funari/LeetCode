@@ -11,7 +11,7 @@ class Solution2:
 
         seen = {}
 
-        for i, num in enumerate(num):  #enumerate -> returns index and value
+        for i, num in enumerate(nums):  #enumerate -> returns index and value
             if target - num in seen:
                 return([seen][target - num], i)
             elif num not in seen:
